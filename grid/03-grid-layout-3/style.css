@@ -7,7 +7,8 @@
   text-align: center;
   display: grid;
   grid-template-columns: minmax(100px, 400px) 1fr;
-  grid-template-rows: 100px 1fr 5fr 1fr;
+  grid-template-rows: 100px 50px 5fr 50px;
+  gap: 5px;
 }
 
 .container div {
@@ -65,12 +66,19 @@
   font-size: 16px;
   text-transform: uppercase;
   display: grid;
+}
+
+.nav ul {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .article {
   background-color: #bccbde;
   grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
 }
 
 .article p {
@@ -84,6 +92,7 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  height: 200px;
 }
 
 .card p {
